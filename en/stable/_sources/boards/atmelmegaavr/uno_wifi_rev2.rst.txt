@@ -9,10 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/uno_wifi_rev2.rst.txt
 .. _board_atmelmegaavr_uno_wifi_rev2:
 
 Arduino Uno WiFi Rev2
 =====================
+=======
+.. _board_atmelavr_ATmega644P:
+
+ATmega644P/PA
+=============
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega644P.rst
 
 .. contents::
 
@@ -32,12 +39,17 @@ Platform :ref:`platform_atmelmegaavr`: 8-bit MCUs Built for Real-time Control wi
   * - **RAM**
     - 6KB
   * - **Vendor**
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/uno_wifi_rev2.rst.txt
     - `Arduino <https://www.arduino.cc/en/Guide/ArduinoUnoWiFiRev2?utm_source=platformio.org&utm_medium=docs>`__
+=======
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega644p?utm_source=platformio&utm_medium=docs>`__
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega644P.rst
 
 
 Configuration
 -------------
 
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/uno_wifi_rev2.rst.txt
 Please use ``uno_wifi_rev2`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
@@ -49,13 +61,32 @@ Please use ``uno_wifi_rev2`` ID for :ref:`projectconf_env_board` option in :ref:
 You can override default Arduino Uno WiFi Rev2 settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `uno_wifi_rev2.json <https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/uno_wifi_rev2.json>`_. For example,
+=======
+Please use ``ATmega644P`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+
+.. code-block:: ini
+
+  [env:ATmega644P]
+  platform = atmelavr
+  board = ATmega644P
+
+You can override default ATmega644P/PA settings per build environment using
+``board_***`` option, where ``***`` is a JSON object path from
+board manifest `ATmega644P.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega644P.json>`_. For example,
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega644P.rst
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/uno_wifi_rev2.rst.txt
   [env:uno_wifi_rev2]
   platform = atmelmegaavr
   board = uno_wifi_rev2
+=======
+  [env:ATmega644P]
+  platform = atmelavr
+  board = ATmega644P
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega644P.rst
 
   ; change microcontroller
   board_build.mcu = atmega4809
@@ -65,7 +96,11 @@ board manifest `uno_wifi_rev2.json <https://github.com/platformio/platform-atmel
 
 Debugging
 ---------
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/uno_wifi_rev2.rst.txt
 :ref:`piodebug` currently does not support Arduino Uno WiFi Rev2 board.
+=======
+:ref:`piodebug` currently does not support ATmega644P/PA board.
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega644P.rst
 
 Frameworks
 ----------

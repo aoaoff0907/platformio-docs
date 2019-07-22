@@ -9,10 +9,17 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/avr_iot_wg.rst.txt
 .. _board_atmelmegaavr_avr_iot_wg:
 
 AVR-IoT WG Development Board
 ============================
+=======
+.. _board_atmelavr_ATmega32:
+
+ATmega32
+========
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega32.rst
 
 .. contents::
 
@@ -32,12 +39,17 @@ Platform :ref:`platform_atmelmegaavr`: 8-bit MCUs Built for Real-time Control wi
   * - **RAM**
     - 6KB
   * - **Vendor**
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/avr_iot_wg.rst.txt
     - `Microchip <https://www.microchip.com/developmenttools/ProductDetails/AC164160?utm_source=platformio.org&utm_medium=docs>`__
+=======
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega32?utm_source=platformio&utm_medium=docs>`__
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega32.rst
 
 
 Configuration
 -------------
 
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/avr_iot_wg.rst.txt
 Please use ``avr_iot_wg`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
 
 .. code-block:: ini
@@ -49,13 +61,32 @@ Please use ``avr_iot_wg`` ID for :ref:`projectconf_env_board` option in :ref:`pr
 You can override default AVR-IoT WG Development Board settings per build environment using
 ``board_***`` option, where ``***`` is a JSON object path from
 board manifest `avr_iot_wg.json <https://github.com/platformio/platform-atmelmegaavr/blob/master/boards/avr_iot_wg.json>`_. For example,
+=======
+Please use ``ATmega32`` ID for :ref:`projectconf_env_board` option in :ref:`projectconf`:
+
+.. code-block:: ini
+
+  [env:ATmega32]
+  platform = atmelavr
+  board = ATmega32
+
+You can override default ATmega32 settings per build environment using
+``board_***`` option, where ``***`` is a JSON object path from
+board manifest `ATmega32.json <https://github.com/platformio/platform-atmelavr/blob/master/boards/ATmega32.json>`_. For example,
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega32.rst
 ``board_build.mcu``, ``board_build.f_cpu``, etc.
 
 .. code-block:: ini
 
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/avr_iot_wg.rst.txt
   [env:avr_iot_wg]
   platform = atmelmegaavr
   board = avr_iot_wg
+=======
+  [env:ATmega32]
+  platform = atmelavr
+  board = ATmega32
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega32.rst
 
   ; change microcontroller
   board_build.mcu = atmega4808
@@ -65,7 +96,11 @@ board manifest `avr_iot_wg.json <https://github.com/platformio/platform-atmelmeg
 
 Debugging
 ---------
+<<<<<<< HEAD:en/stable/_sources/boards/atmelmegaavr/avr_iot_wg.rst.txt
 :ref:`piodebug` currently does not support AVR-IoT WG Development Board board.
+=======
+:ref:`piodebug` currently does not support ATmega32 board.
+>>>>>>> 2a578453 (Sync Atmel AVR boards):boards/atmelavr/ATmega32.rst
 
 Frameworks
 ----------
