@@ -19,7 +19,7 @@ ATmega324A
 Hardware
 --------
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
@@ -28,11 +28,11 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **Frequency**
     - 16MHz
   * - **Flash**
-    - 32KB
+    - 31.50KB
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega324a?utm_source=platformio.org&utm_medium=docs>`__
+    - `Microchip <https://www.microchip.com/wwwproducts/en/ATmega324a?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
@@ -65,28 +65,7 @@ board manifest `ATmega324A.json <https://github.com/platformio/platform-atmelavr
 
 Debugging
 ---------
-
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
-
-.. warning::
-    You will need to install debug tool drivers depending on your system.
-    Please click on compatible debug tool below for the further
-    instructions and configuration information.
-
-You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
-
-ATmega324A has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-.. list-table::
-  :header-rows:  1
-
-  * - Compatible Tools
-    - On-board
-    - Default
-  * - :ref:`debugging_tool_simavr`
-    - Yes
-    - Yes
+:ref:`piodebug` currently does not support ATmega324A board.
 
 Frameworks
 ----------
@@ -97,4 +76,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.

@@ -19,7 +19,7 @@ LowPowerLab Moteino
 Hardware
 --------
 
-Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming
+Platform :ref:`platform_atmelavr`: Atmel AVR 8- and 32-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industrys most code-efficient architecture for C and assembly programming.
 
 .. list-table::
 
@@ -32,7 +32,7 @@ Platform :ref:`platform_atmelavr`: Atmel AVR 8-bit MCUs deliver a unique combina
   * - **RAM**
     - 2KB
   * - **Vendor**
-    - `LowPowerLab <https://lowpowerlab.com/shop/product/99?utm_source=platformio.org&utm_medium=docs>`__
+    - `LowPowerLab <https://lowpowerlab.com/shop/product/99?utm_source=platformio&utm_medium=docs>`__
 
 
 Configuration
@@ -65,31 +65,7 @@ board manifest `moteino.json <https://github.com/platformio/platform-atmelavr/bl
 
 Debugging
 ---------
-
-:ref:`piodebug` - "1-click" solution for debugging with a zero configuration.
-
-.. warning::
-    You will need to install debug tool drivers depending on your system.
-    Please click on compatible debug tool below for the further
-    instructions and configuration information.
-
-You can switch between debugging :ref:`debugging_tools` using
-:ref:`projectconf_debug_tool` option in :ref:`projectconf`.
-
-LowPowerLab Moteino has on-board debug probe and **IS READY** for debugging. You don't need to use/buy external debug probe.
-
-.. list-table::
-  :header-rows:  1
-
-  * - Compatible Tools
-    - On-board
-    - Default
-  * - :ref:`debugging_tool_avr-stub`
-    - Yes
-    - Yes
-  * - :ref:`debugging_tool_simavr`
-    - Yes
-    - 
+:ref:`piodebug` currently does not support LowPowerLab Moteino board.
 
 Frameworks
 ----------
@@ -100,4 +76,4 @@ Frameworks
       - Description
 
     * - :ref:`framework_arduino`
-      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences
+      - Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
